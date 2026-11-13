@@ -1,101 +1,211 @@
-﻿# Nexvia Technologies - Data Analytics Internship Projects
+# Nexvia Technologies – Data Analytics Internship Projects
 
+This repository contains two end-to-end data analytics projects completed as part of the **Nexvia Technologies Data Analytics Internship**.
 
+The projects demonstrate practical experience in enterprise business intelligence, data warehousing, ETL development, financial analytics, credit-risk analysis, data visualization and reporting.
 
-This repository contains two data analytics projects completed as part of the Nexvia Technologies internship.
+---
 
+## Projects Overview
 
+### 1. DA-01 – Enterprise Business Intelligence Suite
 
-## Projects
-
-
-
-### 1. DA-01 - Enterprise Business Intelligence Suite
-
-
+**Objective:** Develop an enterprise business intelligence solution for a multi-region company to analyse business performance across multiple departments.
 
 **Technologies:** SQL Server, T-SQL, Power BI, DAX, Power Query, PowerShell
 
+**Key Features:**
 
+- Designed a data warehouse using staging, dimension and fact table architecture.
+- Implemented ETL procedures to load and transform source data.
+- Created data validation checks and ETL execution logging.
+- Developed analytical dashboards for Executive, Sales, Finance, HR and Supply Chain departments.
+- Created DAX measures for business performance analysis, including sales, financial metrics and time-based comparisons.
+- Automated warehouse refresh execution using PowerShell and Windows Task Scheduler.
+- Implemented regional data access controls using Power BI Row-Level Security (RLS).
 
-- Developed an enterprise data warehouse using staging, dimension and fact tables.
+**Architecture:**
 
-- Built ETL procedures, data validation checks and execution logging.
+AdventureWorks2022 Source Database → Staging Layer → Dimension and Fact Tables → Power BI Semantic Model → Business Intelligence Dashboards
 
-- Created Power BI dashboards covering Executive, Sales, Finance, HR and Supply Chain analytics.
+**Main Deliverables:**
 
-- Automated ETL execution using PowerShell and Windows Task Scheduler.
+- SQL database implementation scripts.
+- ETL stored procedures and PowerShell automation.
+- Power BI dashboard (`.pbix`).
+- Data dictionary and architecture documentation.
+- Validation results, screenshots and project presentation.
 
+### 2. DA-04 – Finance Analytics & Credit Risk
 
+**Objective:** Develop a finance analytics and credit-risk analysis solution using financial ledger data and loan-level datasets.
 
-### 2. DA-04 - Finance Analytics & Credit Risk
+**Technologies:** Python, Pandas, NumPy, MySQL, Excel, Power BI, Matplotlib, Seaborn, Scikit-learn
 
+**Key Features:**
 
+- Prepared and analysed financial ledger data.
+- Generated monthly Profit and Loss reports.
+- Performed Balance Sheet validation and financial variance analysis.
+- Used Python and Pandas for loan data cleaning and preparation.
+- Conducted credit-risk analysis using Weight of Evidence (WoE) and Information Value (IV).
+- Developed a credit-risk scorecard and analytical outputs.
+- Evaluated model performance using metrics such as AUC, Gini and KS.
+- Created financial and credit-risk dashboards in Power BI.
 
-**Technologies:** Python, Pandas, MySQL, Excel, Power BI
+**Architecture:**
 
+Financial and Loan Datasets → Data Preparation (Python / SQL) → Financial Reporting and Credit-Risk Analysis → Analytical Outputs → Power BI Dashboards
 
+**Main Deliverables:**
 
-- Developed financial reporting workflows for monthly Profit & Loss and Balance Sheet analysis.
+- Python scripts for data preparation and credit-risk analysis.
+- MySQL database scripts and financial queries.
+- Excel financial analysis workbook.
+- Power BI dashboard (`.pbix`).
+- Project report, screenshots and demonstration video.
 
-- Performed loan data preparation and analysis using Python and Pandas.
-
-- Applied Weight of Evidence (WoE) and Information Value (IV) analysis.
-
-- Generated credit-risk scorecard outputs, risk bands and analytical summaries.
-
-
+---
 
 ## Repository Structure
 
-
-
+```text
 Nexvia-Internship-Projects/
+│
+├── DA-01_Enterprise-Business-Intelligence/
+│   ├── SQL/
+│   ├── PowerShell/
+│   ├── PowerBI/
+│   ├── Documentation/
+│   ├── Evidence/
+│   ├── Logs/
+│   └── Presentation/
+│
+├── DA-04_Finance-Analytics-Credit-Risk/
+│   ├── Code/
+│   ├── SQL/
+│   ├── Python/
+│   ├── Excel/
+│   ├── Reports/
+│   ├── Dashboards/
+│   ├── Screenshots/
+│   ├── Demonstration Video/
+│   └── Datasets/
+│
+├── .gitignore
+└── README.md
+```
 
-- DA-01_Enterprise-Business-Intelligence/
+*Note: Refer to the actual folders in each project directory for the complete file structure.*
 
-- DA-04_Finance-Analytics-Credit-Risk/
+---
 
-- .gitignore
+## Tools and Technologies
 
-- README.md
+| Category | Tools |
+|---|---|
+| Programming | Python, SQL, T-SQL, PowerShell |
+| Data Analysis | Pandas, NumPy |
+| Databases | MySQL, Microsoft SQL Server |
+| Visualization | Power BI, Excel, Matplotlib, Seaborn |
+| Business Intelligence | DAX, Power Query |
+| Machine Learning / Risk Analysis | Scikit-learn, WoE, IV |
+| Version Control | Git, GitHub |
 
+---
 
+## Installation and Execution
 
-## Contents
+### DA-01 – Enterprise Business Intelligence
 
+**Prerequisites:**
+- Microsoft SQL Server.
+- SQL Server Management Studio (SSMS).
+- Power BI Desktop.
+- PowerShell.
 
+**Execution overview:**
 
-Includes source code, SQL scripts, Power BI reports, documentation, screenshots, reports and demonstration evidence.
+1. Install and configure SQL Server.
+2. Restore or make available the AdventureWorks2022 source database.
+3. Review the SQL implementation scripts in the DA-01 project folder.
+4. Execute the database and ETL implementation scripts in the documented order.
+5. Configure the PowerShell ETL automation using the project instructions.
+6. Open the Power BI `.pbix` file using Power BI Desktop.
+7. Configure the required data source connection and refresh the dashboard.
 
+### DA-04 – Finance Analytics & Credit Risk
 
+**Prerequisites:**
+- Python 3.
+- MySQL Server and MySQL Workbench.
+- Microsoft Excel.
+- Power BI Desktop.
 
-## Notes
+**Execution overview:**
 
+1. Set up the Python environment.
+2. Install the required Python libraries listed in the project documentation.
+3. Obtain the required source datasets and place them in the documented data directories.
+4. Configure the MySQL database and execute the SQL scripts.
+5. Run the Python scripts for data preparation, WoE/IV analysis and credit-risk scorecard generation.
+6. Open the Excel workbook and Power BI dashboard to inspect the analytical outputs.
 
+**Important:** Refer to the individual project README files and documentation for exact script execution order, configuration details and dataset requirements.
 
-- Large processed datasets may be excluded because of GitHub file-size limitations.
+---
 
-- Power BI Desktop is required to open PBIX files.
+## Validation and Project Evidence
 
-- Refer to each project folder for detailed documentation and execution instructions.
+Both projects include supporting evidence to demonstrate their implementation and outputs.
 
+**DA-01:**
+- Database and table validation.
+- ETL execution logs.
+- Power BI dashboard screenshots.
+- Project architecture and data dictionary.
+- Project presentation.
 
+**DA-04:**
+- Financial reporting outputs.
+- Balance Sheet validation.
+- Credit-risk analysis and model evaluation metrics.
+- Power BI dashboard screenshots.
+- Final project report and demonstration video.
+
+---
+
+## Dataset Information
+
+The projects use publicly available sample and financial datasets for analysis and demonstration.
+
+Some large processed datasets are excluded from this repository because they exceed GitHub's individual file-size limit.
+
+For DA-04, the Lending Club dataset source is available through:
+
+https://www.kaggle.com/datasets/wordsforthewise/lending-club
+
+Refer to the individual project documentation for dataset details and preparation instructions.
+
+---
+
+## Requirements
+
+- Power BI Desktop is required to open the `.pbix` dashboard files.
+- SQL Server and MySQL are required for their respective database components.
+- Python is required to execute the DA-04 analytical scripts.
+- Dataset availability and database configuration are required before executing the corresponding workflows.
+
+---
 
 ## Author
 
-
-
-Miryala Shashi Varma
-
-
+**Miryala Shashi Varma**
 
 GitHub: https://github.com/shashivarma-miryala
 
-
-
 LinkedIn: https://www.linkedin.com/in/miryala-shashi-varma-9452003b6
 
+---
 
-
-
+*Completed as part of the Nexvia Technologies Data Analytics Internship.*
