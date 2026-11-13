@@ -70,30 +70,31 @@ Financial and Loan Datasets → Data Preparation (Python / SQL) → Financial Re
 ## Repository Structure
 
 ```text
+
 Nexvia-Internship-Projects/
 │
 ├── DA-01_Enterprise-Business-Intelligence/
-│   ├── SQL/
-│   ├── PowerShell/
-│   ├── PowerBI/
 │   ├── Documentation/
 │   ├── Evidence/
 │   ├── Logs/
-│   └── Presentation/
+│   ├── PowerBI/
+│   ├── PowerShell/
+│   ├── Presentation/
+│   └── SQL/
 │
 ├── DA-04_Finance-Analytics-Credit-Risk/
 │   ├── Code/
-│   ├── SQL/
-│   ├── Python/
-│   ├── Excel/
-│   ├── Reports/
 │   ├── Dashboards/
-│   ├── Screenshots/
+│   ├── Datasets/
+│   │   ├── Processed/
+│   │   └── Synthetic_Finance/
 │   ├── Demonstration Video/
-│   └── Datasets/
+│   ├── Reports/
+│   └── Screenshots/
 │
 ├── .gitignore
 └── README.md
+
 ```
 
 *Note: Refer to the actual folders in each project directory for the complete file structure.*
